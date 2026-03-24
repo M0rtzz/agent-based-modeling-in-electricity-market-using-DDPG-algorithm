@@ -1,3 +1,7 @@
+from _bootstrap import add_project_root_to_path
+
+add_project_root_to_path()
+
 import numpy as np
 from market.three_bus import market_clearing
 from algorithm.DDPG import DDPG
@@ -52,10 +56,10 @@ for step in range(n_steps):
 C = np.array([[0.36, 0.58, 0.75],
               [0.92, 0.28, 0.29]])
 
-plt.plot(strategic_variables[:, 0], lw=0.1, C=C[0], alpha=0.5, label=r"$\alpha_{1t}$")
-plt.plot(strategic_variables[:, 1], lw=0.1, C=C[1], alpha=0.5, label=r"$\alpha_{2t}$")
-plt.plot([0, 10000], [20.29, 20.29], '--', C=C[0], label=r"$\alpha_{1t}^\ast$")
-plt.plot([0, 10000], [22.98, 22.98], '--', C=C[1], label=r"$\alpha_{2t}^\ast$")
+plt.plot(strategic_variables[:, 0], lw=0.1, c=C[0], alpha=0.5, label=r"$\alpha_{1t}$")
+plt.plot(strategic_variables[:, 1], lw=0.1, c=C[1], alpha=0.5, label=r"$\alpha_{2t}$")
+plt.plot([0, 10000], [20.29, 20.29], '--', c=C[0], label=r"$\alpha_{1t}^\ast$")
+plt.plot([0, 10000], [22.98, 22.98], '--', c=C[1], label=r"$\alpha_{2t}^\ast$")
 plt.xlabel(r"$t$")
 plt.ylabel(r"$\alpha_{gt}$ (\$/MHh)")
 plt.title("DDPG (3-Bus System)")

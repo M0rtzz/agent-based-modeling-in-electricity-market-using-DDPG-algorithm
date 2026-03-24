@@ -9,7 +9,7 @@ Agent-Based Modeling in Electricity Market Using Deep Deterministic Policy Gradi
 * VRE algorithm in 3-bus system:
 
 ```
-python run_VRE_3-bus.py
+python run/run_VRE_3-bus.py
 ```
 
 ![VRE](https://github.com/liangyancang/agent-based-modeling-in-electricity-market-using-DDPG-algorithm/blob/master/results/VRE.png)
@@ -17,7 +17,7 @@ python run_VRE_3-bus.py
 * Q-Learning algorithm in 3-bus system:
 
 ```
-python run_Q-Learning_3-bus.py
+python run/run_Q-Learning_3-bus.py
 ```
 
 ![Q-Learning](https://github.com/liangyancang/agent-based-modeling-in-electricity-market-using-DDPG-algorithm/blob/master/results/Q-Learning.png)
@@ -25,7 +25,7 @@ python run_Q-Learning_3-bus.py
 * DDPG algorithm in 3-bus system:
 
 ```
-python run_DDPG_3-bus.py
+python run/run_DDPG_3-bus.py
 ```
 
 ![DDPG-3](https://github.com/liangyancang/agent-based-modeling-in-electricity-market-using-DDPG-algorithm/blob/master/results/DDPG_3_bus.png)
@@ -33,7 +33,7 @@ python run_DDPG_3-bus.py
 * DDPG algorithm in 30-bus system:
 
 ```
-python run_DDPG_30-bus.py
+python run/run_DDPG_30-bus.py
 ```
 
 ![DDPG-30](https://github.com/liangyancang/agent-based-modeling-in-electricity-market-using-DDPG-algorithm/blob/master/results/DDPG_30-bus.png)

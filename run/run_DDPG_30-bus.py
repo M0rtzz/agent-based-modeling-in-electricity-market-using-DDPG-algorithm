@@ -1,3 +1,7 @@
+from _bootstrap import add_project_root_to_path
+
+add_project_root_to_path()
+
 import numpy as np
 from market.thirty_bus import market_clearing
 from algorithm.DDPG import DDPG
@@ -56,17 +60,17 @@ C = np.array([[0.90, 0.19, 0.20],
               [0.96, 0.89, 0.47],
               [0.69, 0.40, 0.24]])
 
-plt.plot(strategic_variables[:, 0], lw=0.1, C=C[0], alpha=0.5, label=r"$\alpha_{1t}$")
-plt.plot(strategic_variables[:, 1], lw=0.1, C=C[1], alpha=0.5, label=r"$\alpha_{2t}$")
-plt.plot(strategic_variables[:, 2], lw=0.1, C=C[2], alpha=0.5, label=r"$\alpha_{3t}$")
-plt.plot(strategic_variables[:, 3], lw=0.1, C=C[3], alpha=0.5, label=r"$\alpha_{4t}$")
-plt.plot(strategic_variables[:, 4], lw=0.1, C=C[4], alpha=0.5, label=r"$\alpha_{5t}$")
-plt.plot(strategic_variables[:, 5], lw=0.1, C=C[5], alpha=0.5, label=r"$\alpha_{6t}$")
-plt.plot([0, 10000], [21.388, 21.388], '--', C=C[0])
-plt.plot([0, 10000], [23.807, 23.807], '--', C=C[1])
-plt.plot([0, 10000], [34.317, 34.317], '--', C=C[2])
-plt.plot([0, 10000], [27.235, 27.235], '--', C=C[3])
-plt.plot([0, 10000], [24.848, 24.848], '--', C=C[5])
+plt.plot(strategic_variables[:, 0], lw=0.1, c=C[0], alpha=0.5, label=r"$\alpha_{1t}$")
+plt.plot(strategic_variables[:, 1], lw=0.1, c=C[1], alpha=0.5, label=r"$\alpha_{2t}$")
+plt.plot(strategic_variables[:, 2], lw=0.1, c=C[2], alpha=0.5, label=r"$\alpha_{3t}$")
+plt.plot(strategic_variables[:, 3], lw=0.1, c=C[3], alpha=0.5, label=r"$\alpha_{4t}$")
+plt.plot(strategic_variables[:, 4], lw=0.1, c=C[4], alpha=0.5, label=r"$\alpha_{5t}$")
+plt.plot(strategic_variables[:, 5], lw=0.1, c=C[5], alpha=0.5, label=r"$\alpha_{6t}$")
+plt.plot([0, 10000], [21.388, 21.388], '--', c=C[0])
+plt.plot([0, 10000], [23.807, 23.807], '--', c=C[1])
+plt.plot([0, 10000], [34.317, 34.317], '--', c=C[2])
+plt.plot([0, 10000], [27.235, 27.235], '--', c=C[3])
+plt.plot([0, 10000], [24.848, 24.848], '--', c=C[5])
 plt.xlabel(r"$t$")
 plt.ylabel(r"$\alpha_{gt}$ (\$/MHh)")
 plt.title("DDPG (IEEE 30-Bus System)")
