@@ -5,6 +5,23 @@ Agent-Based Modeling in Electricity Market Using Deep Deterministic Policy Gradi
 - Python 3.7
 - Pytorch 1.0.1
 
+## Get Started
+
+```shell
+conda create -n DDPG_torch-1.0.1_cp37 python=3.7
+
+conda activate DDPG_torch-1.0.1_cp37
+
+# Windows PowerShell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+git clone https://github.com/M0rtzz/agent-based-modeling-in-electricity-market-using-DDPG-algorithm.git
+
+cd agent-based-modeling-in-electricity-market-using-DDPG-algorithm
+
+uv pip install -r pyproject.toml
+```
+
 ## Run
 * VRE algorithm in 3-bus system:
 
